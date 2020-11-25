@@ -1,4 +1,4 @@
-function RectangleCard({ leftLink, rightLink, name }) {
+function RectangleCard({ leftLink, rightLink, name, rightLinkName }) {
   return (
     <div class="pro-card">
       <div class="course-name">
@@ -19,7 +19,7 @@ function RectangleCard({ leftLink, rightLink, name }) {
           target="_blank"
           rel="noreferrer"
         >
-          Certificate
+        {rightLinkName ? rightLinkName : "Certificate"}
         </a>
       </div>
         )

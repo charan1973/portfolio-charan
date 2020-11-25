@@ -18,6 +18,12 @@ function Projects() {
           leftLink="https://github.com/charan1973/CS50W"
           name="Projects from CS50W"
         />
+        <RectangleCard
+          leftLink="https://github.com/charan1973/CS50W/tree/book2018"
+          name="Books project(Part of CS50W)"
+          rightLink="https://book-flask-project.herokuapp.com/"
+          rightLinkName="Site Link"
+        />
       </div>
     </>
   );
