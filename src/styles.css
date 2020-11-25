@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* background: linear-gradient(to right, #2c5364, #203a43, #0f2027); */
+  background-image: url(./assets/y-so-serious.png);
+  font-family: "Inter", sans-serif;
+  color: #fff;
+  position: relative;
+  min-height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.navbar a:hover {
+  border-bottom: #fff 2px solid;
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+footer div {
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+}
+
+footer div a {
+  color: #fff;
+}
+
+footer div a:hover {
+  color: rgba(255, 255, 255, 0.371);
+}
+
+main a{
+  color: #fff;
+}
+main a:hover{
+  text-decoration: none;
+  color: #fff;
+}
+
+
+#description {
+  width: 80vw;
+  height: 45vh;
+  background-color: #507382;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: 150px;
+  border-radius: 10px;
+  box-shadow: 20px 20px 50px 10px #000;
+  transition: all 0.2s ease-in-out;
+}
+
+#description:hover {
+  transform: scale(1.005);
+}
+
+#description img {
+  position: relative;
+  left: -5%;
+  top: 7%;
+  height: 80%;
+  width: 20%;
+  border-radius: 10px;
+  box-shadow: 10px 10px 50px rgb(46, 46, 46);
+}
+
+#description .about {
+  position: relative;
+  top: 10%;
+  padding: 30px;
+}
+
+#description .about p {
+  color: rgb(202, 197, 197);
+}
+
+.pro-card {
+  background-color: rgba(100, 97, 97, 0.7);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.748);
+  transition: all 0.2s ease-in-out;
+}
+
+.pro-card:hover {
+  transform: scale(0.99);
+}
+
+.pro-card i {
+  color: rgba(255, 255, 255, 0.412);
+}
+
+#social {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#social .pro-card{
+  width: 250px;
+  height: 250px;
+}
+
+#skills{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10%;
+    justify-items: center;
+}
+
+#skills .pro-card{
+    height: 175px;
+    width: 175px;
+  }
+
+#courses{
+  display: flex;
+  flex-direction: column;
+}
+
+#courses .pro-card, .grid-2 .pro-card, #projects .pro-card{
+  height: 100px;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.grid-2{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+@media (max-width: 1284px) {
+  #description {
+    height: auto;
+    width: auto;
+  }
+  #description img {
+    position: relative;
+    top: 50px;
+    left: 10px;
+    border-radius: 50%;
+  }
+  #description .about {
+    padding: 20px;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar ul {
+    flex-direction: row;
+  }
+  .navbar ul li {
+    padding: 10px;
+  }
+
+  #skills{
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+  footer{
+    display: none;
+  }
+}
