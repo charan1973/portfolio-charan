@@ -21,6 +21,8 @@ function Projects() {
         <RectangleCard
           leftLink="https://github.com/charan1973/reddit-clone"
           name="Reddit Clone"
+          rightLink="https://bereddit.herokuapp.com/"
+          rightLinkName="Site Link"
         />
         <RectangleCard
           leftLink="https://github.com/charan1973/password-generator"
