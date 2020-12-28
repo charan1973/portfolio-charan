@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import RectangleCard from "../cards/reactangleCard";
 
 function Projects() {
@@ -6,6 +6,18 @@ function Projects() {
     <>
       <h2 className="text-center py-5">Projects</h2>
       <div id="projects">
+        <RectangleCard
+          leftLink="https://github.com/charan1973/pizzashop"
+          name="Pizza Shop - still on development"
+          rightLink="https://nice-guy-pose.herokuapp.com/"
+          rightLinkName="Site Link"
+        />
+        <RectangleCard
+          leftLink="https://github.com/charan1973/CS50W/tree/book2018"
+          name="Books project(Part of CS50W)"
+          rightLink="https://book-flask-project.herokuapp.com/"
+          rightLinkName="Site Link"
+        />
         <RectangleCard
           leftLink="https://github.com/charan1973/reddit-clone"
           name="Reddit Clone"
@@ -17,12 +29,6 @@ function Projects() {
         <RectangleCard
           leftLink="https://github.com/charan1973/CS50W"
           name="Projects from CS50W"
-        />
-        <RectangleCard
-          leftLink="https://github.com/charan1973/CS50W/tree/book2018"
-          name="Books project(Part of CS50W)"
-          rightLink="https://book-flask-project.herokuapp.com/"
-          rightLinkName="Site Link"
         />
       </div>
     </>

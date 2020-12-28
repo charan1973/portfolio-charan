@@ -2,8 +2,8 @@ const { default: RectangleCard } = require("../cards/reactangleCard");
 
 function Courses() {
   return (
-    <>
-      <h2 className="text-center py-5">Courses</h2>
+    <div style={{marginTop: "120px"}}>
+      <h2 className="text-center py-2">Courses</h2>
       <div id="courses">
       <RectangleCard
         leftLink="https://www.udemy.com/course/the-complete-web-development-bootcamp"
@@ -25,7 +25,7 @@ function Courses() {
         name="Complete React Developer in 2021 (w/ Redux, Hooks, GraphQL)"
       />
       </div>
-    </>
+    </div>
   );
 }
 

@@ -7,8 +7,10 @@ function RectangleCard({ leftLink, rightLink, name, rightLinkName }) {
           target="_blank"
           rel="noreferrer"
           class="font-weight-bold"
+          data-toggle="tooltip"
+          title={name}
         >
-          {name}
+          {name.length > 30 ? name.slice(0, 30) + "..." : name}
         </a>
       </div>
       {
