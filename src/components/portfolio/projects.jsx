@@ -8,7 +8,7 @@ function Projects() {
       <div id="projects">
         <RectangleCard
           leftLink="https://github.com/charan1973/pizzashop"
-          name="Pizza Shop - still on development"
+          name="Pizza Shop with Admin Panel and Stripe"
           rightLink="https://nice-guy-pose.herokuapp.com/"
           rightLinkName="Site Link"
         />
