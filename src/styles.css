@@ -18,6 +18,10 @@ body {
   justify-content: flex-start;
 }
 
+.navbar a{
+  border: 2px solid transparent;
+}
+
 .navbar a:hover {
   border-bottom: #fff 2px solid;
 }
